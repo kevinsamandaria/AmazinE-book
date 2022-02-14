@@ -16,7 +16,6 @@ class AdminController extends Controller
 
     public function delete(Request $request){
         User::where('id', $request->id)->delete();
-
         return back();
     }
 
